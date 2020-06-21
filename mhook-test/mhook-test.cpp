@@ -19,7 +19,10 @@
 //IN THE SOFTWARE.
 
 #include "stdafx.h"
-#include "mhook-lib/mhook.h"
+
+#include "../mhook-lib/mhook.h"
+#pragma comment(lib, "../x64/Release/disasm-lib.lib")
+#pragma comment(lib, "../x64/Release/mhook-lib.lib")
 
 //=========================================================================
 // Define _NtOpenProcess so we can dynamically bind to the function
